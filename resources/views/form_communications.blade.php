@@ -7,11 +7,8 @@
     <div class="col-sm-7 mx-auto">
         <h1 class="panel-heading  text-center">Форма отправики данных</h1>
         
-        <div class=" p-4 pt-3 pb-3 rounded-top">
-        
-                <img class=" row mx-auto " src="img/logo.png" alt=""  height="100">
-
-
+        <div class=" p-4 pt-3 pb-3 rounded-top">      
+            <img class=" row mx-auto " src="img/logo.png" alt=""  height="100">
         </div>
 
         <form id="contactForm" class="rounded-bottom  p-4 pt-3 pb-3 " action="postic" method="post">
