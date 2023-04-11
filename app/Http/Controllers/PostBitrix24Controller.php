@@ -42,7 +42,7 @@ class PostBitrix24Controller extends Controller
          "fields" => 
          [
             "TITLE" => "Лид с нашего сайта ".$date = date('Y-m-d H:i:s'),	// название лида
-            "MYTESTPOLE" => $surname,	
+            "MYTESTPOLE" => $surname,		// фамилия ;)
             "LAST_NAME" => $surname,		// фамилия ;)
             "NAME" => $name,			      // имя ;)
             "SECOND_NAME" => $patronymic,	// отчество ;)
