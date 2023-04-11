@@ -1,7 +1,8 @@
 <?php
 
-	namespace crest;
+	namespace App\CRest\src;
 	require_once (__DIR__.'/settings.php');
+
 	/**
 	 *  @version 1.36
 	 *  define:
@@ -17,7 +18,7 @@
 	 *      C_REST_IGNORE_SSL = true //turn off validate ssl by curl
 	 */
 
-	class crest
+	class CRest
 	{    
 	
 		public static $ura = '.app.flamix.solutions/api/';

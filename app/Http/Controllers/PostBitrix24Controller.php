@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Crest\src\CRest;
 
 class PostBitrix24Controller extends Controller
 {
 
    public function Submit(Request $request){
-
 
       $validated = $request->validate([
          'email' => 'required|email',
@@ -35,9 +35,6 @@ class PostBitrix24Controller extends Controller
       $name =($input['Имя']);
       $patronymic = ($input['Отчество']);
       $comment = ($input['Комментарий']);
- 
-
-      require_once('crest/src/crest.php');
 
       CRest::call(
       'crm.lead.add',
@@ -45,7 +42,7 @@ class PostBitrix24Controller extends Controller
          "fields" => 
          [
             "TITLE" => "Лид с нашего сайта ".$date = date('Y-m-d H:i:s'),	// название лида
-            "MYTESTPOLE" => $surname,		// фамилия ;)
+            "MYTESTPOLE" => $surname,	
             "LAST_NAME" => $surname,		// фамилия ;)
             "NAME" => $name,			      // имя ;)
             "SECOND_NAME" => $patronymic,	// отчество ;)
